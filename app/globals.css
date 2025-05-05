@@ -12,15 +12,44 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.imghover {
+  transition: all .4s ease-in-out;
+}
+.imghover:hover {
+  scale: 1.2;
+}
+.imghoverm {
+  transition: all .4s ease-in-out;
+}
+.imghoverm:hover {
+  scale: 2;
+}
+
+.btnhover .span, .btnhover .txt {
+  transition: all .3s ease-in-out;
+}
+
+.btnhover:hover .txt {
+  z-index: 80;
+  color: #fff;
+  display: absolute;
+  top: 0
+}
+.btnhover:hover  {
+  background: blue;
+  display: block;
+  border: 2px solid #fff;
 }
