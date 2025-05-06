@@ -5,6 +5,8 @@ import { FaArrowLeft, FaArrowRight, FaGreaterThan, FaPhone } from "react-icons/f
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Newsletter from "@/components/Newsletter";
+import Footer from "@/components/Footer";
 gsap.registerPlugin(ScrollTrigger)
 
 export default function Home() {
@@ -520,21 +522,39 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="blogpost mt-20 px-[400px] mb-10">
+      <section className="blogpost mt-20 px-[300px] mb-10">
         <div className="flex justify-between items-center">
           <h1 className="text-3xl font-bold font-sans">Blog Post</h1>
           <Button styles="bg-transparent border-blue-400 text-blue-400! border-2">View More</Button>
         </div>
-        <div>
-          <p>April 27, 2022</p>
+        <div className="flex justify-between mt-14">
+          <div className="flex flex-col justify-between ">
+            <p>April 27, 2022</p>
 
-          <FaArrowRight className="absolute right-0 top-[200px] text-blue-400 text-5xl" />
-          <div className="detail">
-            <p>Pellentesque erat mattis inibus felis non, consectetur...</p>
-            <img src="/blogp1.png" alt="" />
+            <FaArrowRight className="text-blue-400 text-[34px] border border-blue-500 rounded-full p-2" />
+          </div>
+
+          <div className="detail flex flex-col justify-between">
+            <p className="w-[210px]">Pellentesque erat mattis inibus felis non, consectetur...</p>
+            <img src="/blogp1.png" alt="first blog post" className="w-[250px] h-[150px] mt-5" />
+          </div>
+
+          <div className="flex flex-col justify-between ">
+            <p>April 28, 2022</p>
+
+            <FaArrowRight className="text-blue-400 text-[34px] border border-blue-500 rounded-full p-2" />
+          </div>
+
+          <div className="detail flex flex-col justify-between">
+            <p className="w-[210px]">Curabitur eu eroset metus euismod facilisis...</p>
+            <img src="/blogp2.png" alt="second blog post" className="w-[250px] h-[150px] mt-5" />
           </div>
         </div>
       </section>
+
+      <Newsletter />
+
+      <Footer />
     </section>
   );
 }
