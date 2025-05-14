@@ -10,9 +10,9 @@ const Header = () => {
 
       <nav className='flex justify-baseline items-center gap-14'>
         <Link href={'/'}>Services</Link>
-        <Link href={'/'}>Doctors</Link> 
+        <Link href={'/doctors'}>Doctors</Link> 
         <Link href={'/'}>Blogs</Link>
-        <Link href={'/'}>About</Link>
+        <Link href={'/about'}>About</Link>
         <Link href={'/'}>Contact</Link>
       </nav>
 

@@ -5,7 +5,7 @@ import Button from './Button'
 
 const Footer = () => {
   return (
-    <footer className='h-[80vh] pt-[100px] px-32'>
+    <footer className='h-[80vh] pt-[100px] px-32 bg-white'>
       <div className="con flex justify-between">
         <div className="col1 w-[420px]">
           <img src="/logo.png" alt="logo" />

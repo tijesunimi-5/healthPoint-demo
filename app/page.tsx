@@ -201,7 +201,7 @@ export default function Home() {
   }, [])
 
   return (
-    <section id="homepage" className="bg-[#ffff] h-full w-full flex flex-col mt-20">
+    <section id="homepage" className="bg-[#f0fbff] h-full w-full flex flex-col pt-20">
       <section className="h-[80vh]">
         <div id="hero" className="relative w-full">
           <div className="image w-full h-full absolute">
@@ -244,7 +244,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="content1" className="relative w-full h-[100vh] flex justify-center items-center gap-14 scrollStart">
+      <section id="content1" className="relative w-full h-[100vh] flex justify-center items-center gap-14 scrollStart bg-white">
         <div className="imgContainer w-[300px] h-[480px] mt-[500px] z-30 relative">
           <img src="/groupimg1.png" alt="doctor" className="w-[150px] h-[150px] absolute right-0 top-16" />
           <img src="/groupimg2.png" alt="doctor" className="w-[200px] h-[200px] absolute top-4 left-[-65px]" />
@@ -266,7 +266,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="services" className="w-full mb-20 bg-blue-50 scrollnxt">
+      <section id="services" className="w-full bg-blue-50 scrollnxt">
         <div className="flex flex-col justify-center items-center gap-6">
           <h1 className="text-[24px] font-bold w-[300px] ml-[-400px] mt-[80px] scrollhead mr-[300px] opacity-0">Highly Innovative Technology & Services</h1>
           <div className="flex flex-col gap-7 w-[700px]">
@@ -340,8 +340,8 @@ export default function Home() {
         </div>
 
         <div className="flex items-center mt-20">
-          <div className="img bg-gray-400 w-[450px] h-[400px] rounded-tl rounded-br relative overflow-hidden ml-[410px] z-20">
-            <img src="/testt.png" alt="doctor test patient h-[800px]" />
+          <div className="img bg-gray-400 w-[450px] h-[420px] rounded-tl-[10px] rounded-br relative overflow-hidden ml-[410px] z-20">
+            <img src="/testt.png" alt="doctor test patient" className="h-full" />
             <div className="emer flex bg-white justify-center items-center py-3 w-[240px] absolute bottom-0 left-0 gap-3">
               <FaPhone />
               <div className="txt font-bold">
@@ -350,7 +350,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="content bg-white w-[660px] h-[400px] pl-20">
+          <div className="content bg-white w-[660px] h-[420px] pl-20">
             <h1 className="pt-10 font-bold text-2xl w-[300px] mt-9 gshd ml-[-300px] opacity-0">
               Support Groups for Depression & Anxiety
             </h1>
@@ -358,14 +358,14 @@ export default function Home() {
               Letraset sheets containing lorem ipsum passages and more recently with desktop publishing various versions have evolved over the years, sometimes by accident, sometimes chunks as necessary making.
             </p>
 
-            <Button styles="bg-transparent text-blue-500! border-2 border-blue-400 rounded px-7 btnhover pfade opacity-0">
+            <Button styles="bg-transparent text-blue-500! border-2 mt-[-24px] border-blue-400 rounded px-7 btnhover pfade opacity-0">
               <span className="txt z-40">Learn More</span>
             </Button>
           </div>
         </div>
       </section>
 
-      <section id="docteam" className="flex flex-col h-[100vh]">
+      <section id="docteam" className="flex flex-col h-[155vh] pt-20 bg-white">
         <div className="start flex flex-col justify-center items-center">
           <h1 className="text-3xl font-bold">
             Team of Doctors
@@ -485,7 +485,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="testimonial flex justify-center relative h-[90vh] bg-blue-50 mt-[400px] gap-[200px] pt-28 mb-[10vh]">
+      <section className="testimonial flex justify-center relative h-[90vh] bg-blue-50  gap-[200px] pt-28">
         <div>
           <h1 className="text-2xl font-bold w-[200px]">Customers Testimonials</h1>
 
@@ -522,7 +522,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="blogpost mt-20 px-[300px] mb-10">
+      <section className="blogpost pt-32 px-[300px] pb-20 bg-white">
         <div className="flex justify-between items-center">
           <h1 className="text-3xl font-bold font-sans">Blog Post</h1>
           <Button styles="bg-transparent border-blue-400 text-blue-400! border-2">View More</Button>
